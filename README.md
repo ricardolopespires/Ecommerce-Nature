@@ -11,24 +11,24 @@ Projeto de Ecommerce para  produtos naturais. para pessoas que deseja adquirir a
     <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/ricardolopespires/Django" />
     <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/ricardolopespires/Django" />
                 
-   <img align = right src="https://github.com/ricardolopespires/Django/blob/master//banner-django.png" width = 490/>
+   <img align = right src="https://github.com/ricardolopespires/Ecommerce-Nature/blob/main/Banner-nature-git.png" width = 490/>
 </p>
 
 
 <br>
 
-**Construído com Python e Django.**
+**Construído Ecommerce Nature com Python e Django.**
 
 
 
 
 ## Recursos
 
-* Interface para criar sua empresa e usuários
-* Crie projetos, tarefas, atualize informações
-* Visualizações por usuários, tarefas e projetos
+* Interface para vendas de produtos orgânicos 
+* interface de usuário, carrinho de compra, pagamento 
+* Visualizações por usuários, compras
 * Entre e saia, crie seu perfil, atualize sua foto de perfil
-* Interaja com outros usuários enviando pedidos de amizade, adicione e remova amigos
+* Interaja com os pedidos 
 * Integração com Amazon AWS S3 para arquivos estáticos
 
 ## Construído com
