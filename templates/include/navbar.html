@@ -28,8 +28,8 @@
         <div class="top">
           <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
         </div>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="{% url 'list_products' %}">Produtos</a></li>    
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'produtos:list_products' %}">Produtos</a></li>    
         <!-- icons -->
         <li class="icons">
           <a style="margin-right: ;" href="cart.html">
@@ -44,3 +44,4 @@
       <label for="" class="btn open-btn"><i class="fas fa-bars"></i></label>
     </div>
   </nav>
+

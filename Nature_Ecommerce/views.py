@@ -17,13 +17,3 @@ class Index_views(View):
 
 
 
-
-class List_Products(View):
-
-    def get(self, request):
-        categorias = Category.objects.all()
-        return render(request, 'initial/products.html',{'categorias':categorias})
-
-
-
-
