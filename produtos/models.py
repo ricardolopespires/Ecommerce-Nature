@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
 
@@ -9,6 +10,10 @@ class Category(models.Model):
 
     class Meta:
         ordering = ('-name',)
+
+    def __str__(self):
+        return self.name
+ 
 
 
 class Product(models.Model):
@@ -21,8 +26,14 @@ class Product(models.Model):
     price = models.DecimalField(max_digits = 10, decimal_places = 2, help_text = "O Valor do Produto")
     available  = models.BooleanField(default = True)
 
+    def get_absolute_url(self):
+        return reverse ("produtos:produtos_list_da_categoria", args = [self.slug])
+
     class Meta:
         ordering = ('shu',)
- 
 
+
+    def __str__(self):
+        return self.name
+ 
 
