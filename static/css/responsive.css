@@ -1,0 +1,95 @@
+@media only screen and (min-width: 900px) {
+  .get-in-touch-section .blocks .column {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-section .button-group button.learn-more {
+    color: #ffffff;
+    background: #00a0c1;
+  }
+
+  .options .inner,
+  .why-choose-us-section .inner,
+  .practice-advice-section .inner {
+    margin-bottom: 25px;
+  }
+}
+
+/* Mobile version  */
+@media only screen and (max-width: 600px) {
+  .hero-section .button-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .hero-section .button-group button {
+    min-width: 183px;
+    margin-bottom: 10px;
+  }
+
+  .hero-section .button-group button.learn-more {
+    color: #ffffff;
+    background: #00a0c1;
+  }
+
+  .header-section.sticky-nav {
+    box-shadow: 0 0 16px #959595;
+  }
+
+  .options .inner,
+  .why-choose-us-section .inner,
+  .practice-advice-section .inner {
+    margin-bottom: 25px;
+  }
+
+  .services-section .video-section {
+    margin-bottom: 20px;
+  }
+
+  .services-section .service-listing .d-flex img {
+    margin-right: 10px;
+  }
+
+  .services-section .service-listing .d-flex h5 {
+    font-size: 15px;
+  }
+
+  .trusted-companies img {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  .newsletter {
+    max-width: 100%;
+  }
+
+  .newsletter h4 {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  .newsletter .input-section input {
+    padding: 4px 15px;
+  }
+
+  .contact-section {
+    text-align: center;
+  }
+
+  .contact-section button {
+    float: inherit;
+    margin-top: 20px;
+  }
+
+  .footer-section .green-area ul {
+    margin-bottom: 35px;
+  }
+
+  .footer-text p {
+    padding-bottom: 15px;
+  }
+}

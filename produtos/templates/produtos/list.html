@@ -112,9 +112,9 @@
               </ul>
             </div>
             <div class="bottom">
-              <a href="productDetails.html">{{ produto.name }}</a>
+              <a href="{{ produto.get_absolute_url  }} ">{{ produto.name }}</a>
               <div class="price">
-                <span>R${{ produto.price }}</span>
+                <span>R$ {{ produto.price }}</span>
               </div>
             </div>
           </div>

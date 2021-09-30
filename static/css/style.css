@@ -1,0 +1,671 @@
+/* Google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* Common styles  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #00A0C1;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #00a63f;
+  --darck-brown: #16171B;
+  --light-brown: #FCD326;
+  --medium-brown: #FFD261;
+  --brown-more:#CDAD6A;
+  --secondary: #213364;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+}
+
+
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  background-color: #e5e5e542;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+}
+
+/* Utility classes  */
+
+.section-padding {
+  padding: 70px 20px;
+}
+
+.pt-15 {
+  padding-top: 15px !important;
+}
+
+.pb-15 {
+  padding-bottom: 15px !important;
+}
+
+.pt-30 {
+  padding-top: 30px !important;
+}
+
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+
+.pt-50 {
+  padding-top: 50px !important;
+}
+
+.pb-50 {
+  padding-bottom: 50px !important;
+}
+
+.pt-70 {
+  padding-top: 70px !important;
+}
+
+.pb-70 {
+  padding-bottom: 70px !important;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-heading h1 {
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.section-heading p {
+  color: #737373;
+}
+
+/* ===================
+    Header section 
+ =================== */
+
+.header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1024;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.header-section .row {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.header-section .logo {
+  padding: 35px 0;
+}
+
+.header-section .logo a {
+  text-decoration: none;
+  color: #000;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.header-section .navbar {
+  list-style: none;
+ 
+}
+
+.header-section .navbar li a {
+  line-height: 90px;
+  text-decoration: none;
+  color: #000;
+  transition: all 400ms;
+}
+
+.header-section .navbar li a:hover {
+  color: #00a0c1;
+}
+
+.toggle-icon {
+  float: right;
+  margin-top: 35px;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.toggle-icon i {
+  color: #000;
+  font-size: 33px;
+}
+
+.header-section.sticky-nav {
+  background: #fff;
+  transition: all 400ms;
+  box-shadow: 0 0 16px #ddd;
+}
+
+.header-section.sticky-nav .logo {
+  padding: 17px 0;
+}
+
+.header-section.sticky-nav .navbar li a {
+  line-height: 58px;
+}
+
+.header-section.sticky-nav .toggle-icon {
+  margin-top: 21px;
+}
+
+/* ===================
+    Hero section 
+ =================== */
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/hero-section-img.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 60px;
+  padding-bottom: 40px;
+  color: #252b42;
+}
+
+.hero-section p {
+  color: #737373;
+  font-size: 18px;
+  max-width: 356px;
+  padding-bottom: 30px;
+}
+
+.hero-section .button-group {
+  max-width: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section .button-group button {
+  padding: 12px 28px;
+  border-radius: 40px;
+  outline: none;
+}
+
+.hero-section .button-group button.get-quote-btn {
+  border: 2px solid #ffa62b;
+  background: #ffa62b;
+  color: #fff;
+  transition: all 400ms;
+}
+
+.hero-section .button-group button.get-quote-btn:hover {
+  background: #e49220;
+  border: 2px solid #e49220;
+}
+
+.hero-section .button-group button.learn-more {
+  border: 2px solid #00a0c1;
+  color: var(--blue);
+  background: transparent;
+  transition: all 400ms;
+}
+
+.hero-section .button-group button.learn-more:hover {
+  background: #00a0c1;
+  color: #fff;
+}
+
+.toggle-menu {
+  padding: 16px 35px;
+}
+
+.toggle-menu ul {
+  margin: 0;
+  list-style: none;
+}
+
+.toggle-menu ul li {
+  padding: 12px 0;
+}
+
+.toggle-menu ul li a {
+  text-decoration: none;
+  color: #252b42;
+}
+
+/* ===================
+    Options section 
+ =================== */
+
+.options {
+  margin-top: -50px;
+}
+
+.options .inner {
+  padding: 20px 25px;
+  background: #fff;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  min-height: 198px;
+}
+
+.options .inner.active {
+  background-color: #00a0c1;
+  color: #fff;
+}
+
+.options .inner img {
+  max-width: 45px;
+}
+
+.options .inner h3 {
+  padding-top: 22px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #252b42;
+}
+
+.options .inner.active h3,
+.options .inner.active p {
+  color: #fff;
+}
+
+.options .inner p {
+  color: #737373;
+  padding-top: 15px;
+}
+
+/* ===================
+    Why Choose us section 
+ =================== */
+
+.why-choose-us-section .inner {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.why-choose-us-section .inner img {
+  max-width: 45px;
+  padding-bottom: 10px;
+}
+
+.why-choose-us-section .inner h1 {
+  font-weight: 700;
+}
+
+.why-choose-us-section .inner span {
+  color: #252b42;
+}
+
+/* ===================
+    Practive advice section 
+ =================== */
+
+.practice-advice-section .inner {
+  background-color: #fff;
+}
+
+.practice-advice-section .inner h4 {
+  padding: 15px 15px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.practice-advice-section .inner p {
+  padding: 0px 15px 19px 15px;
+  font-size: 15px;
+}
+
+.practice-advice-section .inner img {
+  width: 100%;
+}
+
+/* ===================
+    Services section 
+ =================== */
+
+.services-section {
+  background-color: #fff;
+}
+
+.services-section .video-section {
+  position: relative;
+}
+
+.services-section .video-section img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.services-section .video-section button.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.services-section .video-section button.play-btn:hover i {
+  transform: scale(1.1);
+}
+
+.services-section .video-section button i {
+  padding: 20px 20px;
+  font-size: 43px;
+  background: #00a0c1;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 500ms;
+}
+
+.services-section h3 {
+  font-weight: 700;
+  padding-bottom: 24px;
+  max-width: 340px;
+  font-size: 35px;
+}
+
+.services-section p {
+  font-size: 15px;
+  color: #737373;
+  padding-bottom: 20px;
+}
+
+.services-section .service-listing {
+  list-style: none;
+}
+
+.services-section .service-listing .d-flex {
+  justify-content: space-between;
+}
+
+.services-section .service-listing .d-flex img {
+  max-width: 33px;
+  max-height: 33px;
+}
+
+.services-section .service-listing .d-flex h5 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.services-section .service-listing .d-flex p {
+  font-size: 14px;
+  color: #737373;
+}
+
+/* ===================
+    Subscribe section 
+ =================== */
+
+.subscribe-section {
+  position: relative;
+}
+
+.subscribe-section::after {
+  content: "";
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.trusted-companies {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.newsletter {
+  background-color: #16697a;
+  padding: 20px;
+  max-width: 55%;
+  margin: 0px auto 0 auto;
+  position: relative;
+  top: 44px;
+  z-index: 3;
+}
+
+.newsletter h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.newsletter .input-section {
+}
+
+.newsletter .input-section input {
+  padding: 12px 15px;
+  width: 70%;
+  outline: none;
+  border: oldlace;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.newsletter .input-section button {
+  padding: 12px 14px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #ffa62b;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* ===================
+    Get in touch section 
+ =================== */
+
+.get-in-touch-section .inner-block {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 17px;
+  margin-bottom: 20px;
+  transition: all 500ms;
+}
+
+.get-in-touch-section .inner-block:hover {
+  background: #252b42;
+  color: #fff;
+  transform: scale(1.1);
+  position: relative;
+  z-index: 4;
+}
+
+.get-in-touch-section .inner-block:hover i,
+.get-in-touch-section .inner-block:hover span,
+.get-in-touch-section .inner-block:hover p,
+.get-in-touch-section .inner-block:hover button {
+  color: #fff;
+}
+
+.get-in-touch-section .inner-block:hover button {
+  border-color: #fff;
+}
+
+.get-in-touch-section .inner-block i {
+  font-size: 85px;
+  color: #00a0c1;
+  padding-bottom: 20px;
+}
+
+.get-in-touch-section .inner-block span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #252b42;
+}
+
+.get-in-touch-section .inner-block p {
+  padding-top: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #252b42;
+}
+
+.get-in-touch-section .inner-block button {
+  padding: 11px 15px;
+  margin-top: 22px;
+  border-radius: 6px;
+  border: 1px solid #ffa62b;
+  color: #ffa62b;
+  background: transparent;
+}
+
+/* ===================
+    Contact section 
+ =================== */
+
+.contact-section {
+  background: #fff;
+}
+
+.contact-section .row {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-section h3 {
+  color: #252b42;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.contact-section p {
+  color: #737373;
+}
+
+.contact-section button {
+  padding: 11px 31px;
+  background: #ffa62b;
+  color: #fff;
+  font-size: 15px;
+  min-width: 130px;
+  border: 1px solid #ffa62b;
+  outline: none;
+  border-radius: 5px;
+  float: right;
+}
+
+/* ===================
+    Footer section 
+ =================== */
+
+.footer-section {
+  background: #16697a;
+}
+
+.footer-section .heading {
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section .green-area .space {
+  padding: 7px 0;
+}
+
+.footer-section .green-area ul li {
+  padding: 4px 0;
+}
+
+.footer-text {
+  padding: 20px;
+}
+
+.footer-text p {
+  color: #737373;
+}
+
+.footer-text .social-icons {
+  margin-left: auto;
+  max-width: 300px;
+}
+
+.footer-text .social-icons a {
+  text-decoration: none;
+}
+
+.footer-text .social-icons i {
+  font-size: 33px;
+  margin: 0 8px;
+}
+
+.footer-text .social-icons i.facebook {
+  color: #335bf5;
+}
+
+.footer-text .social-icons i.instagram {
+  color: #e51f5a;
+}
+
+.footer-text .social-icons i.twitter {
+  color: #21a6df;
+}
+
+.footer-text .social-icons i.youtube {
+  color: #e42f08;
+}
